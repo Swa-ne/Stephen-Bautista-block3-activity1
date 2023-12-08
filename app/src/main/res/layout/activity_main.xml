@@ -10,13 +10,29 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:lines="7"
+        android:lines="5"
         android:text="TextView"
         android:textAlignment="viewEnd"
         android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:maxLines="1"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -64,7 +80,7 @@
             android:text="9" />
 
         <Button
-            android:id="@+id/buttonmult"
+            android:id="@+id/buttondiv"
             style="@style/NoBorderRadiusButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -110,7 +126,7 @@
             android:text="6" />
 
         <Button
-            android:id="@+id/buttondiv2"
+            android:id="@+id/buttonmult"
             style="@style/NoBorderRadiusButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -175,13 +191,13 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
         <Button
-            android:id="@+id/buttonper"
+            android:id="@+id/buttonres"
             style="@style/NoBorderRadiusButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="2.5dp"
             android:layout_weight="1"
-            android:text="%" />
+            android:text="C" />
 
         <Button
             android:id="@+id/button0"
@@ -193,13 +209,13 @@
             android:text="0" />
 
         <Button
-            android:id="@+id/buttondot"
+            android:id="@+id/buttonequal"
             style="@style/NoBorderRadiusButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="2.5dp"
             android:layout_weight="1"
-            android:text="." />
+            android:text="=" />
 
         <Button
             android:id="@+id/buttonadd"
@@ -211,33 +227,6 @@
             android:text="+" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-        <Button
-            android:id="@+id/buttonres"
-            style="@style/NoBorderRadiusButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="2.5dp"
-            android:layout_weight="1"
-            android:text="C" />
-
-        <Button
-            android:id="@+id/buttonequal"
-            style="@style/NoBorderRadiusButton"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="2.5dp"
-            android:layout_weight="1"
-            android:text="=" />
-    </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
